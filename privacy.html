@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy · Meter Matters</title>
+<meta name="description" content="What Meter Matters keeps about you, what it does with it, and how to delete it.">
+<link rel="icon" type="image/svg+xml" href="icon.svg">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <a class="brand" href="/"><img src="icon.svg" alt=""><strong>Meter Matters</strong></a>
+    <nav>
+      <a href="/">About</a>
+      <a class="btn" href="https://metermatters.app/login">Sign in</a>
+    </nav>
+  </header>
+
+  <article class="doc narrow">
+    <h1>Privacy</h1>
+    <p class="updated">Last updated 12 October 2026</p>
+
+    <p>Meter Matters is a tool for reading your own utility bills. This page says what it keeps
+      about you, what it does with it, and how to get rid of it. It's written to be read, not
+      skimmed past.</p>
+
+    <h2>What it keeps</h2>
+    <ul>
+      <li><strong>Your account.</strong> Your email address, your name if you gave one, and either
+        a password (stored hashed, never readable) or the fact that you sign in with Google.</li>
+      <li><strong>Your bills.</strong> The statements and usage files you upload, forward or type in.
+        That is the point of the app.</li>
+      <li><strong>Your home's ZIP code and state.</strong> Used to fetch the weather and the right
+        grid and rate figures. Your street address is never asked for.</li>
+      <li><strong>Your settings.</strong> Things like your supply rate, the names you give to changes
+        in usage, and which badges you've earned.</li>
+      <li><strong>If you connect Gmail:</strong> a token that lets the app read your mailbox, and the
+        bill emails it finds there. Nothing else from your mail is kept.</li>
+    </ul>
+
+    <h2>What it does with it</h2>
+    <ul>
+      <li>Shows your bills back to you, compared, forecast and explained.</li>
+      <li>Sends your ZIP code, and only that, to <a href="https://open-meteo.com/">Open-Meteo</a> to
+        get past temperatures for your area.</li>
+      <li><strong>Similar homes.</strong> Your usage per day can be averaged with other homes in your
+        state on the same fuel, so you can see how yours sits. It only appears once there are enough
+        homes for no one to be identifiable, and you can turn it off on the Add bills page.</li>
+      <li><strong>Share links.</strong> If you share your energy year, the link carries the numbers
+        and nothing that names you. You can switch it off at any time.</li>
+    </ul>
+
+    <h2>What it never does</h2>
+    <ul>
+      <li>Sell, rent or share your information with anyone.</li>
+      <li>Show advertising, or use trackers or analytics on the app or this site.</li>
+      <li>Send you email. There are no newsletters or notifications of any kind at the moment.</li>
+      <li>Use Google account data for anything beyond signing you in and, if you choose, finding
+        bill emails.</li>
+    </ul>
+
+    <h2>Google sign-in and Gmail</h2>
+    <p>Signing in with Google gives the app your name and email address, nothing more. Connecting
+      Gmail is separate and optional. It asks for read-only access, because Google offers no way to
+      let an app read only your bills. The app looks for bill emails and ignores the rest.
+      Disconnecting on the Add bills page hands the access back to Google and deletes the token the
+      app held. Bills already imported stay.</p>
+    <p>Meter Matters' use of information from Google APIs follows the
+      <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services
+      User Data Policy</a>, including its Limited Use requirements.</p>
+
+    <h2>Cookies</h2>
+    <p>One cookie, to keep you signed in. It is not used for anything else.</p>
+
+    <h2>Where it lives</h2>
+    <p>The app runs on Google Cloud and the database is hosted by Supabase, both in the United
+      States. Connections are encrypted.</p>
+
+    <h2>Deleting everything</h2>
+    <p>On the Add bills page, under <strong>Your account</strong>, type your email address and
+      press <strong>Delete everything</strong>. Every bill, export and setting goes immediately, and
+      any Gmail connection is disconnected. A single home you delete is kept for 30 days in case
+      you change your mind, then removed for good.</p>
+
+    <h2>Questions</h2>
+    <p>The code is open: <a href="https://github.com/davidfic/meter-matters">github.com/davidfic/meter-matters</a>.
+      Questions and concerns are welcome as an issue there.</p>
+  </article>
+
+  <footer class="foot">
+    <div>
+      <a href="/">About</a>
+      <a href="https://metermatters.app">The app</a>
+      <a href="https://github.com/davidfic/meter-matters">GitHub</a>
+    </div>
+    <div>Meter Matters</div>
+  </footer>
+
+</div>
+</body>
+</html>
