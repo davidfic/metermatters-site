@@ -132,6 +132,12 @@ section > .wrap > p.intro, section > .narrow > p.intro { color: var(--text-secon
   border: 1px solid var(--border); box-shadow: var(--shadow-lg); background: var(--surface-1);
 }
 
+.promise.address { border-color: var(--blue); margin-bottom: 28px; }
+.promise.address h3 { margin: 0 0 8px; font-size: 23px; letter-spacing: -0.015em; font-weight: 650; }
+.promise.address p { margin: 0 0 10px; color: var(--text-secondary); }
+.promise.address code { font-size: 0.95em; background: var(--surface-2); padding: 2px 7px; border-radius: 6px; color: var(--text-primary); }
+.promise.address .fine { color: var(--text-muted); font-size: 14px; margin: 4px 0 0; }
+
 .ways { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px 32px; margin: 0; padding: 0; list-style: none; }
 .ways li { padding: 12px 0; border-top: 1px solid var(--border); }
 .ways strong { display: block; font-weight: 650; margin-bottom: 2px; }
