@@ -37,8 +37,6 @@
         grid and rate figures. Your street address is never asked for.</li>
       <li><strong>Your settings.</strong> Things like your supply rate, the names you give to changes
         in usage, and which badges you've earned.</li>
-      <li><strong>If you connect Gmail:</strong> a token that lets the app read your mailbox, and the
-        bill emails it finds there. Nothing else from your mail is kept.</li>
     </ul>
 
     <h2>What it does with it</h2>
@@ -62,12 +60,10 @@
         bill emails.</li>
     </ul>
 
-    <h2>Google sign-in and Gmail</h2>
-    <p>Signing in with Google gives the app your name and email address, nothing more. Connecting
-      Gmail is separate and optional. It asks for read-only access, because Google offers no way to
-      let an app read only your bills. The app looks for bill emails and ignores the rest.
-      Disconnecting on the Add bills page hands the access back to Google and deletes the token the
-      app held. Bills already imported stay.</p>
+    <h2>Google sign-in</h2>
+    <p>Signing in with Google gives the app your name and email address, nothing more. It never asks
+      to read your mail. Bills reach the app only by upload, by the private bills address your own
+      mailbox forwards to, or by typing them in.</p>
     <p>Meter Matters' use of information from Google APIs follows the
       <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services
       User Data Policy</a>, including its Limited Use requirements.</p>
@@ -81,8 +77,8 @@
 
     <h2>Deleting everything</h2>
     <p>On the Add bills page, under <strong>Your account</strong>, type your email address and
-      press <strong>Delete everything</strong>. Every bill, export and setting goes immediately, and
-      any Gmail connection is disconnected. A single home you delete is kept for 30 days in case
+      press <strong>Delete everything</strong>. Every bill, export and setting goes immediately. A
+      single home you delete is kept for 30 days in case
       you change your mind, then removed for good.</p>
 
     <h2>Questions</h2>
